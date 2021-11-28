@@ -6,13 +6,13 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 16:11:23 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/26 16:11:42 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/28 19:02:21 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr_u(unsigned int  n, unsigned int *lenf)
+void	ft_putnbr_u(unsigned int n, unsigned int *lenf)
 {
 	if (n < 0)
 	{
@@ -30,4 +30,3 @@ void	ft_putnbr_u(unsigned int  n, unsigned int *lenf)
 		ft_putnbr_u(n % 10, lenf);
 	}
 }
-

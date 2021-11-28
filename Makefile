@@ -1,8 +1,8 @@
 NAME = libftprintf.a
-SRCS = f*.c
-OBJS = f*.o
+SRCS = $(shell find . -name "f*.c")
+OBJS = $(SRCS:.c=.o)
 all:
-	gcc  -c $(SRCS)
+	gcc  -c -g $(SRCS)
 	ar rc $(NAME) $(OBJS)
 	gcc main.c $(NAME)
 fclean :
